@@ -1,0 +1,1763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FCB6E6F5-D42C-49DE-8763-F282C210944D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>G_Clinic</RootNamespace>
+    <AssemblyName>G_Clinic</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMS.TextBox">
+      <HintPath>..\..\..\..\..\Downloads\ValidatingTextBoxDemo\bin\Release\AMS.TextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\SoftNet Libraries\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.WMPLib">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeVendor.Controls">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\CodeVendor.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ColorSlider">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\ColorSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomizableStrips">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\CustomizableStrips.dll</HintPath>
+    </Reference>
+    <Reference Include="Email.NET">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\Email.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedRichTextBox">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\ExtendedRichTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="GlacialList1.3">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\GlacialList1.3.dll</HintPath>
+    </Reference>
+    <Reference Include="GmailHelper">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\GmailHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib">
+      <HintPath>..\..\..\..\SoftNet Libraries\Interop.AcroPDFLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MdiClientController">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\MdiClientController.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MT.WindowsUI">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies\MT.WindowsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="PieChart">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\PieChart.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.Calendar">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\System.Windows.Forms.Calendar.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\Transitions.dll</HintPath>
+    </Reference>
+    <Reference Include="WebCam_Capture">
+      <HintPath>G:\SoftNet Backup for Test 14-03-2017\SoftNet\G-Clinic Last Working Version\Dependencies 3\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceso Datos\Comprobaciones.cs" />
+    <Compile Include="Acceso Datos\Persistencia.cs" />
+    <Compile Include="Acceso Datos\Seguridad.cs" />
+    <Compile Include="Acceso Datos\Stored_Procedures.cs" />
+    <Compile Include="DockResources.Designer.cs" />
+    <Compile Include="frmCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendario.designer.cs">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultasPorPaciente2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultasPorPaciente2.designer.cs">
+      <DependentUpon>frmConsultasPorPaciente2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmFuentesDelSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmFuentesDelSistema.Designer.cs">
+      <DependentUpon>frmFuentesDelSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\fmBlackBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\fmBlackBackground.designer.cs">
+      <DependentUpon>fmBlackBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmActivityLogReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmActivityLogReport.designer.cs">
+      <DependentUpon>frmActivityLogReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmCambiarContraseñaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmCambiarContraseñaUsuario.designer.cs">
+      <DependentUpon>FrmCambiarContraseñaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCambioCitaPrioridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCambioCitaPrioridad.designer.cs">
+      <DependentUpon>frmCambioCitaPrioridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmCambioContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmCambioContraseña.designer.cs">
+      <DependentUpon>FrmCambioContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCategoriasEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCategoriasEmpleado.designer.cs">
+      <DependentUpon>frmCategoriasEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCategoriasExamenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCategoriasExamenes.designer.cs">
+      <DependentUpon>frmCategoriasExamenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCategoriasGabinete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCategoriasGabinete.Designer.cs">
+      <DependentUpon>frmCategoriasGabinete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultas.Designer.cs">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasAntiguas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasAntiguas.Designer.cs">
+      <DependentUpon>frmConsultasAntiguas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasAntiguasV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasAntiguasV2.Designer.cs">
+      <DependentUpon>frmConsultasAntiguasV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasHistorialConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasHistorialConsultas.Designer.cs">
+      <DependentUpon>frmConsultasHistorialConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasPaciente.Designer.cs">
+      <DependentUpon>frmConsultasPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasPorPaciente1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmConsultasPorPaciente1.Designer.cs">
+      <DependentUpon>frmConsultasPorPaciente1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmContraseñaCorreo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmContraseñaCorreo.Designer.cs">
+      <DependentUpon>frmContraseñaCorreo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCuadernoCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmCuadernoCitas.Designer.cs">
+      <DependentUpon>frmCuadernoCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmDetallePaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmDetallePaciente.Designer.cs">
+      <DependentUpon>frmDetallePaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmDiagnosticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmDiagnosticos.Designer.cs">
+      <DependentUpon>frmDiagnosticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmDock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmDock.Designer.cs">
+      <DependentUpon>frmDock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmEmail.Designer.cs">
+      <DependentUpon>frmEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmEmbarazos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmEmbarazos.Designer.cs">
+      <DependentUpon>frmEmbarazos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmEnviarCorreos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmEnviarCorreos.Designer.cs">
+      <DependentUpon>frmEnviarCorreos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmEpicrisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmEpicrisis.Designer.cs">
+      <DependentUpon>frmEpicrisis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmExamenesConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmExamenesConsulta.Designer.cs">
+      <DependentUpon>frmExamenesConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmExamenesLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmExamenesLaboratorio.Designer.cs">
+      <DependentUpon>frmExamenesLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmGabinete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmGabinete.Designer.cs">
+      <DependentUpon>frmGabinete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmHistoriaClinica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmHistoriaClinica.Designer.cs">
+      <DependentUpon>frmHistoriaClinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmHistorialConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmHistorialConsultas.Designer.cs">
+      <DependentUpon>frmHistorialConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmImagenAmpliada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmImagenAmpliada.designer.cs">
+      <DependentUpon>frmImagenAmpliada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmImagenesConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmImagenesConsultas.Designer.cs">
+      <DependentUpon>frmImagenesConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmIntro.designer.cs">
+      <DependentUpon>frmIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMail.Designer.cs">
+      <DependentUpon>frmMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMailReminder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMailReminder.Designer.cs">
+      <DependentUpon>frmMailReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMailSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMailSettings.Designer.cs">
+      <DependentUpon>frmMailSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMantEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMantEmpleados.designer.cs">
+      <DependentUpon>frmMantEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMantenimientosBasicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMantenimientosBasicos.Designer.cs">
+      <DependentUpon>frmMantenimientosBasicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMenuPrincipal.Designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmMenusXRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmMenusXRol.designer.cs">
+      <DependentUpon>FrmMenusXRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMetodosAnticonceptivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMetodosAnticonceptivos.Designer.cs">
+      <DependentUpon>frmMetodosAnticonceptivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMiEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMiEmpresa.designer.cs">
+      <DependentUpon>frmMiEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMonthCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmMonthCalendar.Designer.cs">
+      <DependentUpon>frmMonthCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmNotificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmNotificacion.designer.cs">
+      <DependentUpon>frmNotificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmNotificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmNotificaciones.designer.cs">
+      <DependentUpon>frmNotificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmOpcionesGenerales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmOpcionesGenerales.designer.cs">
+      <DependentUpon>frmOpcionesGenerales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmOpcionesResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmOpcionesResultados.Designer.cs">
+      <DependentUpon>frmOpcionesResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmOrb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmOrb.Designer.cs">
+      <DependentUpon>frmOrb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmPacientesExistentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmPacientesExistentes.Designer.cs">
+      <DependentUpon>FrmPacientesExistentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPacientesExistentesBusquedaConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPacientesExistentesBusquedaConsultas.Designer.cs">
+      <DependentUpon>frmPacientesExistentesBusquedaConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPacientesPrioridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPacientesPrioridad.Designer.cs">
+      <DependentUpon>frmPacientesPrioridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmParamBusquedaConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmParamBusquedaConsulta.Designer.cs">
+      <DependentUpon>frmParamBusquedaConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPDFViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPDFViewer.Designer.cs">
+      <DependentUpon>frmPDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPermisosEspeciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPermisosEspeciales.Designer.cs">
+      <DependentUpon>frmPermisosEspeciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPhotoAlbum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPhotoAlbum.Designer.cs">
+      <DependentUpon>frmPhotoAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPrescriptionPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPrescriptionPad.Designer.cs">
+      <DependentUpon>frmPrescriptionPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPrueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmPrueba.Designer.cs">
+      <DependentUpon>frmPrueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmRecordatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmRecordatorios.designer.cs">
+      <DependentUpon>frmRecordatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmRespaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmRespaldo.designer.cs">
+      <DependentUpon>FrmRespaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmResultadosExamenesConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmResultadosExamenesConsulta.Designer.cs">
+      <DependentUpon>frmResultadosExamenesConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmSeguridad.designer.cs">
+      <DependentUpon>FrmSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmServer.Designer.cs">
+      <DependentUpon>frmServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmSolicitudAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\FrmSolicitudAdmin.designer.cs">
+      <DependentUpon>FrmSolicitudAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmTipoConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmTipoConsulta.Designer.cs">
+      <DependentUpon>frmTipoConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmUserManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmUserManual.Designer.cs">
+      <DependentUpon>frmUserManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmVideo.Designer.cs">
+      <DependentUpon>frmVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmVideosConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmVideosConsulta.Designer.cs">
+      <DependentUpon>frmVideosConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmWait.designer.cs">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmWaitSaving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmWaitSaving.designer.cs">
+      <DependentUpon>frmWaitSaving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmWaitSendingEmails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\frmWaitSendingEmails.designer.cs">
+      <DependentUpon>frmWaitSendingEmails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\MDIPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\MDIPrincipal.Designer.cs">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\PDFViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\PDFViewerForm.Designer.cs">
+      <DependentUpon>PDFViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\SftMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\SftMessageBox.Designer.cs">
+      <DependentUpon>SftMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz Grafica\TestForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz Grafica\TestForm1.Designer.cs">
+      <DependentUpon>TestForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lógica Negocios\CAntecedentesGenerales.cs" />
+    <Compile Include="Lógica Negocios\CAntecedentes_ObstetGinec.cs" />
+    <Compile Include="Lógica Negocios\CCategoriasEmpleado.cs" />
+    <Compile Include="Lógica Negocios\CCategoriasExamenes.cs" />
+    <Compile Include="Lógica Negocios\CCategoriasGabinete.cs" />
+    <Compile Include="Lógica Negocios\CCitas.cs" />
+    <Compile Include="Lógica Negocios\CConsultaEmbarazo.cs" />
+    <Compile Include="Lógica Negocios\CConsultas.cs" />
+    <Compile Include="Lógica Negocios\CConsultasAntiguas.cs" />
+    <Compile Include="Lógica Negocios\CContactosEmpleados.cs" />
+    <Compile Include="Lógica Negocios\CContactosPacientes.cs" />
+    <Compile Include="Lógica Negocios\CDatosFamiliaresPaciente.cs" />
+    <Compile Include="Lógica Negocios\CDetalleConsulta.cs" />
+    <Compile Include="Lógica Negocios\CDiagnosticos.cs" />
+    <Compile Include="Lógica Negocios\CDiagnosticosConsulta.cs" />
+    <Compile Include="Lógica Negocios\CEmail.cs" />
+    <Compile Include="Lógica Negocios\CEmpleados.cs" />
+    <Compile Include="Lógica Negocios\CEmpresa.cs" />
+    <Compile Include="Lógica Negocios\CEpicrisis.cs" />
+    <Compile Include="Lógica Negocios\CExamenes.cs" />
+    <Compile Include="Lógica Negocios\CExamenesCategoria.cs" />
+    <Compile Include="Lógica Negocios\CExamenesConsulta.cs" />
+    <Compile Include="Lógica Negocios\CGabinete.cs" />
+    <Compile Include="Lógica Negocios\CGabineteCategoria.cs" />
+    <Compile Include="Lógica Negocios\CGabineteConsulta.cs" />
+    <Compile Include="Lógica Negocios\CImagenesConsulta.cs" />
+    <Compile Include="Lógica Negocios\CLogs.cs" />
+    <Compile Include="Lógica Negocios\CMetodosAnticonceptivos.cs" />
+    <Compile Include="Lógica Negocios\CPacientes.cs" />
+    <Compile Include="Lógica Negocios\CPermisosEspeciales.cs" />
+    <Compile Include="Lógica Negocios\CTiposContacto.cs" />
+    <Compile Include="Lógica Negocios\CValoresDefault.cs" />
+    <Compile Include="Lógica Negocios\CVideosConsulta.cs" />
+    <Compile Include="Lógica Negocios\MostrarRecordatorios.cs" />
+    <Compile Include="Miscelaneos y Recursos\ApplicationSettings.cs" />
+    <Compile Include="Miscelaneos y Recursos\AutoCompletePatientSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\AutoCompletePatientSearch.designer.cs">
+      <DependentUpon>AutoCompletePatientSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\CMigraDoc.cs" />
+    <Compile Include="Miscelaneos y Recursos\CustomGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\CustomGrid.designer.cs">
+      <DependentUpon>CustomGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\CustomToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\CustomToolStrip.designer.cs">
+      <DependentUpon>CustomToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\Editor.designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\Encrypt-Decrypt.cs" />
+    <Compile Include="Miscelaneos y Recursos\FocusedPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\FocusedPictureBox.designer.cs">
+      <DependentUpon>FocusedPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\FormatoPDF.cs" />
+    <Compile Include="Miscelaneos y Recursos\GlobalElementValues.cs" />
+    <Compile Include="Miscelaneos y Recursos\GlobalMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\GlobalMenu.designer.cs">
+      <DependentUpon>GlobalMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImagenCambianteLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImagenCambianteLabel.designer.cs">
+      <DependentUpon>ImagenCambianteLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImagenCambiantePictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImagenCambiantePictureBox.designer.cs">
+      <DependentUpon>ImagenCambiantePictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageResizer.cs" />
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\frmDarkBackground.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\frmDarkBackground.designer.cs">
+      <DependentUpon>frmDarkBackground.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\ImageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\ImageDialog.designer.cs">
+      <DependentUpon>ImageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\ImageViewerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\ImageViewerCtrl.designer.cs">
+      <DependentUpon>ImageViewerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\ImageViewerCtrl_Values.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\SoftNetImageViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\SoftNetImageViewer.designer.cs">
+      <DependentUpon>SoftNetImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\ThumbnailController.cs" />
+    <Compile Include="Miscelaneos y Recursos\ImageViewerControl\ThumbnailFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\MailSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\MailSettings.Designer.cs">
+      <DependentUpon>MailSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\Metodos_Globales.cs" />
+    <Compile Include="Miscelaneos y Recursos\Notificaciones.cs" />
+    <Compile Include="Miscelaneos y Recursos\PanelAvailableHours.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\PanelAvailableHours.Designer.cs">
+      <DependentUpon>PanelAvailableHours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\PDFiText.cs" />
+    <Compile Include="Miscelaneos y Recursos\PDFViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\PDFViewer.Designer.cs">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\PhotoAlbum.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\PhotoAlbum.Designer.cs">
+      <DependentUpon>PhotoAlbum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\RecoveryXMLFile.cs" />
+    <Compile Include="Miscelaneos y Recursos\RoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\RoundPanel.Designer.cs">
+      <DependentUpon>RoundPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SafeImage.cs" />
+    <Compile Include="Miscelaneos y Recursos\SemiTransparentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SemiTransparentControl.Designer.cs">
+      <DependentUpon>SemiTransparentControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\Shape.cs" />
+    <Compile Include="Miscelaneos y Recursos\SoftNet-AdobePDFViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNet-AdobePDFViewer.Designer.cs">
+      <DependentUpon>SoftNet-AdobePDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNet-AdobePDFViewer_original.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNet-AdobePDFViewer_original.Designer.cs">
+      <DependentUpon>SoftNet-AdobePDFViewer_original.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNet-IMGtoPDF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNet-IMGtoPDF.Designer.cs">
+      <DependentUpon>SoftNet-IMGtoPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetExamOrganizer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetExamOrganizer.Designer.cs">
+      <DependentUpon>SoftNetExamOrganizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetImageViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetImageViewer.Designer.cs">
+      <DependentUpon>SoftNetImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetListPDFViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetListPDFViewer.Designer.cs">
+      <DependentUpon>SoftNetListPDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetPaintControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetPaintControl.Designer.cs">
+      <DependentUpon>SoftNetPaintControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetTabControl.Designer.cs">
+      <DependentUpon>SoftNetTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetVideoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNetVideoControl.Designer.cs">
+      <DependentUpon>SoftNetVideoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNet_MessageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SoftNet_MessageBox.Designer.cs">
+      <DependentUpon>SoftNet_MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SotNet-PictToPDF.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\SotNet-PictToPDF.Designer.cs">
+      <DependentUpon>SotNet-PictToPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\TestPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\TestPanel.Designer.cs">
+      <DependentUpon>TestPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\TextEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\TextEditor.Designer.cs">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\TransparentPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\TransparentPictureBox.Designer.cs">
+      <DependentUpon>TransparentPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscelaneos y Recursos\VistaConstants.cs" />
+    <Compile Include="Miscelaneos y Recursos\Win32.cs" />
+    <Compile Include="Miscelaneos y Recursos\XMLCreator.cs" />
+    <Compile Include="Partials.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recursos.Designer.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SoftNetGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SoftNetGrid.designer.cs">
+      <DependentUpon>SoftNetGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades.cs" />
+    <EmbeddedResource Include="DockResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DockResources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendario.resx">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultasPorPaciente2.resx">
+      <DependentUpon>frmConsultasPorPaciente2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmFuentesDelSistema.resx">
+      <DependentUpon>frmFuentesDelSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\fmBlackBackground.resx">
+      <DependentUpon>fmBlackBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmActivityLogReport.resx">
+      <DependentUpon>frmActivityLogReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\FrmCambiarContraseñaUsuario.resx">
+      <DependentUpon>FrmCambiarContraseñaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmCambioCitaPrioridad.resx">
+      <DependentUpon>frmCambioCitaPrioridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\FrmCambioContraseña.resx">
+      <DependentUpon>FrmCambioContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmCategoriasEmpleado.resx">
+      <DependentUpon>frmCategoriasEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmCategoriasExamenes.resx">
+      <DependentUpon>frmCategoriasExamenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmCategoriasGabinete.resx">
+      <DependentUpon>frmCategoriasGabinete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmConsultas.resx">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmConsultasAntiguas.resx">
+      <DependentUpon>frmConsultasAntiguas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmConsultasAntiguasV2.resx">
+      <DependentUpon>frmConsultasAntiguasV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmConsultasHistorialConsultas.resx">
+      <DependentUpon>frmConsultasHistorialConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmConsultasPaciente.resx">
+      <DependentUpon>frmConsultasPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmConsultasPorPaciente1.resx">
+      <DependentUpon>frmConsultasPorPaciente1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmContraseñaCorreo.resx">
+      <DependentUpon>frmContraseñaCorreo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmCuadernoCitas.resx">
+      <DependentUpon>frmCuadernoCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmDetallePaciente.resx">
+      <DependentUpon>frmDetallePaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmDiagnosticos.resx">
+      <DependentUpon>frmDiagnosticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmDock.resx">
+      <DependentUpon>frmDock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmEmail.resx">
+      <DependentUpon>frmEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmEmbarazos.resx">
+      <DependentUpon>frmEmbarazos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmEnviarCorreos.resx">
+      <DependentUpon>frmEnviarCorreos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmEpicrisis.resx">
+      <DependentUpon>frmEpicrisis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmExamenesConsulta.resx">
+      <DependentUpon>frmExamenesConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmExamenesLaboratorio.resx">
+      <DependentUpon>frmExamenesLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmGabinete.resx">
+      <DependentUpon>frmGabinete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmHistoriaClinica.resx">
+      <DependentUpon>frmHistoriaClinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmHistorialConsultas.resx">
+      <DependentUpon>frmHistorialConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmImagenAmpliada.resx">
+      <DependentUpon>frmImagenAmpliada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmImagenesConsultas.resx">
+      <DependentUpon>frmImagenesConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmIntro.resx">
+      <DependentUpon>frmIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMail.resx">
+      <DependentUpon>frmMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMailReminder.resx">
+      <DependentUpon>frmMailReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMailSettings.resx">
+      <DependentUpon>frmMailSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMantEmpleados.resx">
+      <DependentUpon>frmMantEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMantenimientosBasicos.resx">
+      <DependentUpon>frmMantenimientosBasicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\FrmMenusXRol.resx">
+      <DependentUpon>FrmMenusXRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMetodosAnticonceptivos.resx">
+      <DependentUpon>frmMetodosAnticonceptivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMiEmpresa.resx">
+      <DependentUpon>frmMiEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmMonthCalendar.resx">
+      <DependentUpon>frmMonthCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmNotificacion.resx">
+      <DependentUpon>frmNotificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmNotificaciones.resx">
+      <DependentUpon>frmNotificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmOpcionesGenerales.resx">
+      <DependentUpon>frmOpcionesGenerales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmOpcionesResultados.resx">
+      <DependentUpon>frmOpcionesResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmOrb.resx">
+      <DependentUpon>frmOrb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\FrmPacientesExistentes.resx">
+      <DependentUpon>FrmPacientesExistentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmPacientesExistentesBusquedaConsultas.resx">
+      <DependentUpon>frmPacientesExistentesBusquedaConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmPacientesPrioridad.resx">
+      <DependentUpon>frmPacientesPrioridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmParamBusquedaConsulta.resx">
+      <DependentUpon>frmParamBusquedaConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmPDFViewer.resx">
+      <DependentUpon>frmPDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmPermisosEspeciales.resx">
+      <DependentUpon>frmPermisosEspeciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmPhotoAlbum.resx">
+      <DependentUpon>frmPhotoAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmPrescriptionPad.resx">
+      <DependentUpon>frmPrescriptionPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmPrueba.resx">
+      <DependentUpon>frmPrueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmRecordatorios.resx">
+      <DependentUpon>frmRecordatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\FrmRespaldo.resx">
+      <DependentUpon>FrmRespaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmResultadosExamenesConsulta.resx">
+      <DependentUpon>frmResultadosExamenesConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\FrmSeguridad.resx">
+      <DependentUpon>FrmSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmServer.resx">
+      <DependentUpon>frmServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\FrmSolicitudAdmin.resx">
+      <DependentUpon>FrmSolicitudAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmTipoConsulta.resx">
+      <DependentUpon>frmTipoConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmUserManual.resx">
+      <DependentUpon>frmUserManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmVideo.resx">
+      <DependentUpon>frmVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmVideosConsulta.resx">
+      <DependentUpon>frmVideosConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmWait.resx">
+      <DependentUpon>frmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmWaitSaving.resx">
+      <DependentUpon>frmWaitSaving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\frmWaitSendingEmails.resx">
+      <DependentUpon>frmWaitSendingEmails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\PDFViewerForm.resx">
+      <DependentUpon>PDFViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\SftMessageBox.resx">
+      <DependentUpon>SftMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz Grafica\TestForm1.resx">
+      <DependentUpon>TestForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\AutoCompletePatientSearch.resx">
+      <DependentUpon>AutoCompletePatientSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\GlobalMenu.resx">
+      <DependentUpon>GlobalMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\ImagenCambiantePictureBox.resx">
+      <DependentUpon>ImagenCambiantePictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\ImageViewerControl\frmDarkBackground.resx">
+      <DependentUpon>frmDarkBackground.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\ImageViewerControl\ImageDialog.resx">
+      <DependentUpon>ImageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\ImageViewerControl\ImageViewerCtrl.resx">
+      <DependentUpon>ImageViewerCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\ImageViewerControl\SoftNetImageViewer.resx">
+      <DependentUpon>SoftNetImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\MailSettings.resx">
+      <DependentUpon>MailSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\PDFViewer.resx">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\PhotoAlbum.resx">
+      <DependentUpon>PhotoAlbum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNet-AdobePDFViewer.resx">
+      <DependentUpon>SoftNet-AdobePDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNet-AdobePDFViewer_original.resx">
+      <DependentUpon>SoftNet-AdobePDFViewer_original.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNet-IMGtoPDF.resx">
+      <DependentUpon>SoftNet-IMGtoPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNetExamOrganizer.resx">
+      <DependentUpon>SoftNetExamOrganizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNetImageViewer.resx">
+      <DependentUpon>SoftNetImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNetListPDFViewer.resx">
+      <DependentUpon>SoftNetListPDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNetPaintControl.resx">
+      <DependentUpon>SoftNetPaintControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNetTabControl.resx">
+      <DependentUpon>SoftNetTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNetVideoControl.resx">
+      <DependentUpon>SoftNetVideoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SoftNet_MessageBox.resx">
+      <DependentUpon>SoftNet_MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\SotNet-PictToPDF.resx">
+      <DependentUpon>SotNet-PictToPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscelaneos y Recursos\TextEditor.resx">
+      <DependentUpon>TextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="recursos.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>recursos1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftNetGrid.resx">
+      <DependentUpon>SoftNetGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ 1_1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active Pregnant Red 80 highlighted 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active Pregnant Red 80 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active Pregnant Red 80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active Pregnant Sky Blue 80 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active Pregnant Sky Blue 80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Active Pregnant Sky Blue 256 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antecedentes Obstétricos y Ginecológicos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow up green 40 - 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow up green 40 - 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio-volume-high 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra gray 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra vertical 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barra vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base form semi transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bell 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bicolor form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloc de notas Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brights-brights_icons-delete_ico-16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelarConsulta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar highlighted2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check 2 210.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check 2 210_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connected Yes 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 40 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact 40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Datos Familiares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Datos Personales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Antecedentes Generales Selected 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Antecedentes Generales Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Antecedentes Obste Selected 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Antecedentes Obste Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Datos Familiares Selected 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Datos Familiares Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Datos Personales Selected 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Datos Personales Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Historial Consultas Previas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Imágenes Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Observaciones Generales Selected 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Observaciones Generales Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Original 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Original 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Original 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Original.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Resultados Examenes Selected 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Resultados Examenes Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dock Videos Selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EjecutarConsulta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Embarazos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folden border red3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form2 red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gnome-Appointment-Missed-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gnome-Appointment-New-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gnome-Appointment-Normal-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-close 55 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-close 55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Historial de Consultas 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Historial de Consultas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Id TAG SoftNet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imágenes de Consultas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IniciarConsulta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\llave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no 52 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no 52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nok %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal form copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normal priority kopetestatusmessage 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not connected 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Observaciones Generales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok 16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opciones highlighted2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orb 85_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orb selected 85.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orb4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orb-softnet 55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Person red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pictureBox6.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures 75 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pictures 75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnancy Active 135 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnancy Active 135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnancy Folder 90 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnancy Folder 90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnancy New 80 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnancy New 80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnancy Ok 135 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pregnancy Ok 135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prueba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\real frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resultados de Exámenes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save image 55 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save image 55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search Patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-consultation CANCEL highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-consultation CANCEL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-consultation highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-consultation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send mails highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send mails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftNet Orb 64 highlighted 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftNet Orb 64 highlighted 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftNet Orb 64 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftNet Orb 64 Pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftNet Orb 64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb highlighted lower half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb highlighted upper rhalf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb normal lower half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb normal upper half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb pressed lower half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb pressed upper half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\softnet orb pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tack Pro 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tack Pro 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tack turn 24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb 32 2 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb 32 2 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb 32 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Sistema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Videos 75 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Videos 75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Videos de Consultas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volume Mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmag 51 highlighted.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xmag 51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antecedentes Generales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antecedentes_Generales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-7.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beep-medium.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Popup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Popup1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Excel">
+      <Guid>{45541000-5750-5300-4B49-4E47534F4655}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>99</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G-Clinic.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SoftNet G-Clinic.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
